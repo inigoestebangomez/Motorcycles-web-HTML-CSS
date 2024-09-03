@@ -1,0 +1,90 @@
+:root {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #242221;
+}
+
+/* HEADER */
+.header {
+  background-color: lightgray;
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 38px;
+}
+.header-user-area{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header-button {
+  height: 34px;
+  background-color: #242221;
+  color: lightgray;
+  border-radius: 4px;
+}
+.header-logo {
+  width: 54px;
+  margin-left: 18px;
+}
+.logo-user {
+  width: 34px;
+  height: 34px;
+}
+.menu-user {
+  width: 34px;
+  height: 34px;
+}
+
+/* MAIN & FILTERS */
+
+.filter-container {
+margin: 18px;
+}
+
+.filter-buttons{
+  display: flex;
+  gap: 18px;
+}
+
+.selected-button{
+background-color: #242221;
+border-radius: 4px;
+color: lightgray;
+}
+
+.unselected-button{
+  background-color: transparent;
+  border: 1px solid #242221;
+  border-radius: 4px;
+}
+
+/* CARD CONTAINER */
+
+.card-container{
+display: flex;
+flex-direction: column;
+
+}
+
+/* img {
+  width: 416px;
+  height: 271px;
+} */
+
+h5 {
+  background-color: lightgray;
+  color: #242221;
+  width: 70px;
+}
+.config-card{
+  background-color: #242221;
+  color: whitesmoke;
+  width: 416px;
+}
