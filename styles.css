@@ -105,7 +105,7 @@ button {
 
 .h2-text {
   font-size: 1.875rem;
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
 }
 
 /* CARD CONTAINER */
@@ -134,7 +134,7 @@ button {
 h3 {
   color: var(--color-gris-ocuro);
   margin: 0px;
-  font-weight: 400;
+  font-weight: var(--font-weight-400);
   font-size: 1.5rem;
 }
 .card-filters {
@@ -234,5 +234,5 @@ hr {
 .footer-link {
   color: blue;
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: var(--font-weight-400);
 }
