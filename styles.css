@@ -30,12 +30,29 @@
   --border-radius-4: 0.25rem;
 }
 
+/* BUTTONS */
 button {
   --button-height: var(--spacing-34);
   --button-border-radius: var(--border-radius-4);
   --button-padding: 0.25rem 0.75rem 0.25rem 0.75rem;
   --button-background-color: var(--color-gris-ocuro);
-  --button-color: var(--color-gris-claro);
+  --button-color-selected: var(--color-gris-claro);
+  --button-color-unselected: var(--color-gris-ocuro);
+  --button-font-weight: var(--font-weight-400)
+}
+
+.button {
+  height: var(--button-height);
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
+  background-color: var(--button-background-color);
+  color: var(--button-color-selected);
+}
+
+.unselected-button {
+  background-color: transparent;
+  border: 1px solid var(--color-gris-ocuro);
+  color: var(--button-color-unselected);
 }
 
 /* HEADER */
@@ -60,13 +77,7 @@ button {
   align-items: center;
   gap: var(--spacing-8);
 }
-.header-button {
-  height: var(--button-height);
-  border-radius: var(--button-border-radius);
-  padding: var(--button-padding);
-  background-color: var(--color-gris-ocuro);
-  color: var(--color-gris-claro);
-}
+
 .header-logo {
   width: var(--spacing-54);
 }
@@ -78,10 +89,10 @@ button {
 /* MAIN & FILTERS */
 
 .filter-container {
-  padding: 3rem 2rem 3rem 2rem;
+  padding: 2rem 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-48);
+  gap: var(--spacing-32);
 }
 .h1-text {
   font-size: 2.25rem;
@@ -90,24 +101,6 @@ button {
 .filter-buttons {
   display: flex;
   gap: var(--spacing-18);
-}
-
-.selected-button {
-  background-color: var(--color-gris-ocuro);
-  height: 2rem;
-  border-radius: var(--button-border-radius);
-  padding: var(--button-padding);
-  color: var(--color-gris-claro);
-  font-weight: var(--font-weight-400);
-}
-
-.unselected-button {
-  background-color: transparent;
-  height: 2rem;
-  border: 1px solid var(--color-gris-ocuro);
-  border-radius: var(--button-border-radius);
-  padding: var(--button-padding);
-  font-weight: var(--font-weight-400);
 }
 
 .h2-text {
@@ -160,7 +153,7 @@ h4 {
   border: 0px var(--color-gris-ocuro);
   border-radius: var(--border-radius-4);
   margin-bottom: var(--spacing-8);
-  padding: var(--button-padding);
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
 .price-info {
   display: flex;
@@ -183,18 +176,6 @@ p {
   color: #0e34ff;
   font-weight: var(--font-weight-400);
   font-size: 1rem;
-}
-.config-card {
-  font-size: 0.875rem;
-  font-weight: var(--font-weight-400);
-  background-color: var(--color-gris-ocuro);
-  color: var(--color-gris-claro);
-  width: 100%;
-  border-radius: var(--spacing-4);
-  text-align: center;
-  text-decoration: none;
-  padding-top: var(--spacing-12);
-  padding-bottom: var(--spacing-12);
 }
 
 /* FOOTER */
