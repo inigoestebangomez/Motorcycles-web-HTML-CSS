@@ -9,7 +9,7 @@
 :root {
   font-family: Arial, Helvetica, sans-serif;
   --font-weight-700: 700;
-  --font-weight-400: 400; 
+  --font-weight-400: 400;
 
   --spacing-4: 0.25rem;
   --spacing-8: 0.5rem;
@@ -41,7 +41,7 @@ button {
   --button-background-color: var(--color-gris-ocuro);
   --button-color-selected: var(--color-gris-claro);
   --button-color-unselected: var(--color-gris-ocuro);
-  --button-font-weight: var(--font-weight-400)
+  --button-font-weight: var(--font-weight-400);
 }
 
 .button {
@@ -84,7 +84,8 @@ button {
 .header-logo {
   width: var(--spacing-54);
 }
-.logo-user, .menu-user {
+.logo-user,
+.menu-user {
   width: 1.5rem;
   height: 1.5rem;
 }
@@ -118,9 +119,27 @@ button {
   padding-top: 0px;
   padding-bottom: var(--spacing-48);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-38);
 }
+
+@media (min-width: 1024px) {
+  .all-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .all-cards-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .all-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -173,7 +192,7 @@ p {
   gap: var(--spacing-8);
 }
 .important-text {
-  color:var(--color-red);
+  color: var(--color-red);
 }
 .link-details {
   color: var(--color-blue);
