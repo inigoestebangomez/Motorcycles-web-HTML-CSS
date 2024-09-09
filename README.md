@@ -14,4 +14,4 @@ Se ha seguido un diseño concreto de tipo Responsive de **FIGMA**.
 
 ## Enlaces
 
-[Link](https://www.figma.com/design/Y1Yl16UMFMOfd5Mr8eKfG1/Untitled?node-id=1-12&t=JKRL3VsW8Ik6SIAp-1)
+[Link referencia de Figma](https://www.figma.com/design/Y1Yl16UMFMOfd5Mr8eKfG1/Untitled?node-id=1-12&t=JKRL3VsW8Ik6SIAp-1)
